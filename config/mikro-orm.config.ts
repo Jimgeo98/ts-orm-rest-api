@@ -4,8 +4,8 @@ import { Book } from '../src/entities/Book'
 import { Shop } from '../src/entities/Shop'
 
 const config: Options = {
-  dbName: "libra",
   type: "mysql",
+  dbName: process.env.MYSQL_DBNAME,
   host: process.env.MYSQL_HOST,
   port: Number(process.env.MYSQL_PORT),
   user: process.env.MYSQL_USERNAME,

@@ -7,8 +7,8 @@ export class BaseModel {
   id: string = nanoid()
 
   @Property()
-  createdAt: Date = new Date()
+  createdAt: Date = new Date(Date.now())
 
   @Property({ onUpdate: () => new Date() })
-  updatedAt: Date = new Date()
+  updatedAt: Date = new Date(Date.now())
 }

@@ -9,6 +9,7 @@ export const validBook = Joi.object({
   title: Joi.string().min(3).required(),
   pages: Joi.number().integer().required(),
   year: Joi.number().integer().min(4),
+  rating: Joi.number().integer(),
   author: Joi.string().required()
 })
 

@@ -48,8 +48,6 @@ export const getBookById = async (ctx: Context): Promise<object> => {
 // Create Book Controller
 export const createBook = async (ctx: Context): Promise<object> => {
   try {
-    //console.log('ctx body', ctx.request.body)
-    //console.log(DI.em)
     // Validation
     const { error } = validBook.validate(ctx.request.body)
     if (error) {
