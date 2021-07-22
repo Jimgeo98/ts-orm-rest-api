@@ -1,13 +1,12 @@
-### TypeScript, MicroORM, MySQL, Koa.js  REST API
+### Node / TypeScript, MicroORM, MySQL, Koa.js  CRUD REST API
 ### Setup
-
 #### Create the '.env' file and fill it
 ```
 cp .env.example .env
 ```
 #### Install Dependencies
 ```
-yarn
+npm install
 ```
 <!-- #### run migrations
 ```
@@ -19,5 +18,5 @@ npx mikro-orm migration:up
 ```
 #### Start the dev Server
 ``` 
-yarn dev
+npm run dev
 ```
